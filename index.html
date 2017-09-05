@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+
+    <head>
+        <title>Quote Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body ng-controller="ctrl">
+
+        <div id="inputContainer">
+            <input type="text" ng-model="newQuote.quote" placeholder="Quote">
+            <input type="text" ng-model="newQuote.person" placeholder="Name">
+            <button type="button" name="button" ng-click="addQuote(newQuote)"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+        <div ng-repeat="quote in quotes track by $index">
+            <p class="quoteStyle"><i class="fa fa-quote-left" aria-hidden="true"></i>
+            {{quote.quote}} <i class="fa fa-quote-right" aria-hidden="true"></i>
+            {{quote.person}} 
+            <button type="button" name="button" ng-click="removeQuote($index)">
+            <i class="fa fa-times-circle" aria-hidden="true"></i></button>
+            </p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/ctrl.js"></script>
+        <script src="./js/service.js"></script>
+    </body>
+
+</html>

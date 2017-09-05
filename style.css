@@ -1,0 +1,45 @@
+body {
+    background-color: #F6FFFB;
+}
+
+button {
+    border: none;
+    background-color: #F6FFFB;
+    outline: none;
+    position: absolute;
+    right: 22px;
+}
+
+#inputContainer button{
+    position: inherit;
+}
+
+.fa {
+    font-size: 18px;
+}
+
+.fa-quote-right, .fa-quote-left {
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+}
+
+.fa-times-circle {
+    position: relative;
+}
+
+p {
+    font-size: 25px;
+}
+
+.quoteStyle {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 60px 0px 18px 15px;
+    box-shadow: 8px 8px 8px #888888;
+    margin: 0px;
+    margin-bottom: -14px;
+}
